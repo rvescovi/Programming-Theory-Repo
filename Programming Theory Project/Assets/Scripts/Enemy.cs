@@ -19,10 +19,10 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MoveObject();
+        MoveObject(); // ABSTRACTION
     }
 
-    virtual public void MoveObject()
+    virtual public void MoveObject() 
     {
         if (transform.position.x > 10)
             transform.position = new Vector3(-10, transform.position.y, zPosition);
